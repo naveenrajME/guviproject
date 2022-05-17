@@ -16,12 +16,6 @@ class login:
         element=self.d.find_element(by=By.XPATH, value='//*[@id="root"]/div/div/div[1]/div[2]/div/div[1]/form/div[2]/div/input')
         element.send_keys(password) 
         element.send_keys(Keys.RETURN)
-        
-
-    # fetch the entire webpage using Selenium Automation
-    def get_data(self,url):
-        self.d.get(url)
-        return(self.d.page_source)
 
 
 s = login()
